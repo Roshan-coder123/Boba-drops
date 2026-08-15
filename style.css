@@ -1,9 +1,56 @@
-img {
-    width: 200px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- body{ 
-    text-align:center;
-    font-family: 'Arial';
-    background-color: #000000;
-    color: #FFFFFF;
- }
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(249, 245, 245);
+    min-height: 100vh;
+    color:rgb(0, 0, 0);
+}
+
+.container {
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: block;
+    width: 250px;
+    object-fit: cover;
+}
+
+.center:hover {
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    color:rgb(0, 108, 203)
+}
+
+.text {
+    font-size: 20px;
+}
