@@ -1,16 +1,110 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<link rel="stylesheet" href="style.css">
-        <title>Roshan Gc</title>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Boba website </title>
+  <!-- my own fonts, picked these cause they look clean together -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
-        <h1>Roshan Gc</h1>
-        <p>roShaN Will code for food</p>
-        <img
-        src="https://dropbubbletea.si/wp-content/uploads/2025/08/floating_bubble_tea_01.png"
-        alt="Boba Drops"
-        />
-    </body>
+
+  <header>
+    <div class="logo">My Boba website </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#journey">The Journey</a>
+      <a href="#Gallery">Gallery</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <p class="hero-kicker">a small trophy shelf, but for tea</p>
+    <h1>Every cup earned,<br>every cup kept.</h1>
+    <p class="hero-sub">
+      I drank my way through Hack Club's Boba Drops — and here's the proof.
+    </p>
+    <a href="#Gallery" class="hero-btn">See the gallery</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About this shelf</h2>
+    <p>
+      This is exactly what it looks like — a place to show off the boba glasses
+      I collected while building stuff with Hack Club. Each part has a story
+      behind it: gropping with friends, a finished project, a small win worth celebrating.
+    </p>
+  </section>
+
+
+  <section id="journey" class="journey">
+    <h2>The Journey of boba</h2>
+    <div class="timeline">
+      <div class="milestone">
+        <span class="ms-count"> 01</span>
+        <h3>Boba drop website</h3>
+        <p>At first we made our boba drop website with hole members of RCoV</p>
+      </div>
+      <div class="milestone">
+        <span class="ms-count"> 02</span>
+        <h3>Submission of boba website</h3>
+        <p>We submitted our boba website to the RCoV</p>
+      </div>
+      <div class="milestone">
+        <span class="ms-count"> 03</span>
+        <h3>Boba on our hands</h3>
+        <p>After submitting our website, we finally got our hands on some real boba!</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="Gallery" class="shelf">
+    <h2>Gallery</h2>
+    <p class="shelf-note">Photos of the  boba glasses.</p>
+
+    <div class="gallery">
+
+
+      <figure class="glass-card">
+        <img src="boba xyz.jpeg" alt="First boba glass on a wooden shelf">
+        <figcaption>
+          <span class="glass-num">No. 01</span>
+          <span class="glass-title">with the group</span>
+        </figcaption>
+      </figure>
+
+
+      <figure class="glass-card">
+        <img src="boba drop.png" alt="Second boba glass, half full">
+        <figcaption>
+          <span class="glass-num">No. 02</span>
+          <span class="glass-title"> cool boba tea</span>
+        </figcaption>
+      </figure>
+
+
+      <figure class="glass-card">
+        <img src="boba real.jpeg" alt="Third boba glass catching window light">
+        <figcaption>
+          <span class="glass-num">No. 03</span>
+          <span class="glass-title">alot of bobas</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <p>Built with html and css. Glasses earned with tea.</p>
+    <p class="footer-small">My Boba website  — a Hack Club Boba Drops thing</p>
+  </footer>
+
+</body>
 </html>
