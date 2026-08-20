@@ -1,11 +1,11 @@
 :root {
-  --cream: #faf6ef;
-  --ink: #2b2620;
-  --tea: #c49167;    
-  --tea-dark: #7f5539;
+  --cream: #fffafafd;
+  --ink: #090601;
+  --tea: #eb0400b1;    
+  --tea-dark: #605a5a;
   --card: #dbcaca;
-  --shadow: 0 6px 18px rgba(43, 38, 32, 0.08);
-  --shadow-hover: 0 12px 28px rgba(43, 38, 32, 0.16);
+  --shadow: 0 6px 18px rgba(242, 133, 0, 0.958);
+  --shadow-hover: 0 12px 28px rgba(255, 255, 255, 0.99);
 }
 
 * {
@@ -46,7 +46,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid rgba(43, 38, 32, 0.08);
+  border-bottom: 1px solid rgba(234, 230, 226, 0.93);
 }
 
 .logo {
@@ -114,7 +114,7 @@ nav a:hover::after {
 
 .hero-sub {
   font-size: 1.05rem;
-  color: rgba(43, 38, 32, 0.75);
+  color: rgba(189, 4, 4, 0.84);
   max-width: 460px;
   margin: 0 auto 32px;
   opacity: 0;
@@ -179,7 +179,7 @@ nav a:hover::after {
   background: var(--card);
   padding: 26px;
   border-radius: 14px;
-  border: 1px solid rgba(43, 38, 32, 0.06);
+  border: 1px solid rgb(246, 135, 0);
   box-shadow: var(--shadow);
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
@@ -203,7 +203,7 @@ nav a:hover::after {
 
 .milestone p {
   font-size: 0.92rem;
-  color: rgb(3, 3, 3);
+  color: rgb(255, 0, 0);
 }
 
 
@@ -219,7 +219,7 @@ nav a:hover::after {
 }
 
 .shelf-note {
-  color: rgba(255, 140, 0, 0.6);
+  color: white;
   font-size: 0.95rem;
   margin-bottom: 40px;
 }
@@ -233,7 +233,7 @@ nav a:hover::after {
 .glass-card {
   background: var(--card);
   border-radius: 14px;
-  border: 1px solid rgba(43, 38, 32, 0.06);
+  border: 1px solid rgba(81, 0, 0, 0.697);
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -279,13 +279,17 @@ nav a:hover::after {
 footer {
   text-align: center;
   padding: 36px 24px;
-  border-top: 1px solid rgba(43, 38, 32, 0.08);
+  border-top: 1px solid rgb(238, 234, 229);
+}
+
+footer p:first-child {
+  color: rgb(254, 255, 255);
 }
 
 .footer-small {
   margin-top: 6px;
   font-size: 0.82rem;
-  color: rgba(43, 38, 32, 0.5);
+  color: rgb(255, 255, 255);
 }
 
 @keyframes fadeUp {
@@ -336,6 +340,10 @@ footer {
   animation: spin 3s linear infinite;
 }
 
+.stardance {
+  color: white;
+}
+
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -372,5 +380,55 @@ footer {
 
 .milestone p {
   font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--tea-dark);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: var(--cream);
+  color: var(--ink);
+  font: 500 0.85rem 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--tea);
+  color: var(--cream);
+}
+
+body.dark-mode {
+  --cream: #f5e9da;
+  --ink: #f5e9da;
+  --tea: #d69a67;
+  --tea-dark: #e9b784;
+  --card: #3a2b25;
+  --shadow: 0 6px 18px rgba(15, 9, 5, 0.45);
+  --shadow-hover: 0 12px 28px rgba(214, 154, 103, 0.28);
+  background-image: linear-gradient(rgba(20, 12, 8, 0.62), rgba(20, 12, 8, 0.62)), url("boba tree background.jpg");
+}
+
+body.dark-mode header,
+body.dark-mode .hero,
+body.dark-mode .about {
+  background: rgba(36, 25, 20, 0.84);
+}
+
+body.dark-mode .hero-sub {
+  color: #f0b27d;
+}
+
+body.dark-mode .theme-toggle {
+  background: var(--tea);
+  color: #241811;
+  border-color: var(--tea);
+}
+
+body.dark-mode .stardance {
   color: var(--ink);
 }
